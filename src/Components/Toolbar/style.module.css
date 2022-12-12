@@ -1,0 +1,22 @@
+.Toolbar {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #703b09;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 90;
+    font-size: 20px;
+}
+@media(max-width: 500px)
+{
+    .Menu {
+        display: none;
+    }
+}
