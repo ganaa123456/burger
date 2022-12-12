@@ -30,7 +30,7 @@ export default class App extends Component {
 
         <main className={css.Content}>
           <Routes>
-            <Route path="/" element={<BurgerPage />} />
+            <Route path="/burger" element={<BurgerPage />} />
             <Route path="/orders" element={<OrderPage />} />
           </Routes>
         </main>
