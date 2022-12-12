@@ -37,19 +37,18 @@ export default class BurgerPage extends Component {
     this.setState({ confirmOrder: false });
   };
   continueOrder = () => {
-    console.log("Continue daragdlaa");
-    // const order = {
-    //   orts: this.state.ingredients,
-    //   dun: this.state.totalPrice,
-    //   hayag: {
-    //     name: "Saraa",
-    //     city: "Ub",
-    //     bairshil: "10r horoolol",
-    //   },
-    // };
-    // axios.post("/orders.json", order).then((response) => {
-    //   alert("Amjilttai");
-    // });
+    const order = {
+      orts: this.state.ingredients,
+      dun: this.state.totalPrice,
+      hayag: {
+        name: "Saraa",
+        city: "Ub",
+        bairshil: "10r horoolol",
+      },
+    };
+    axios.post("/orders.json", order).then((response) => {
+      alert("Amjilttai");
+    });
   };
   ortsNemeh = (type) => {
     const newIngredients = { ...this.state.ingredients };
@@ -109,5 +108,4 @@ export default class BurgerPage extends Component {
       </div>
     );
   }
-  s;
 }

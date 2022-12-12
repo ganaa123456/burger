@@ -4,7 +4,6 @@ import Sidebar from "../../Components/Sidebar";
 import Toolbar from "../../Components/Toolbar";
 import BurgerPage from "../BurgerPage";
 import OrderPage from "../OrderPage";
-import ShippingPage from "../ShippingPage";
 import css from "./style.module.css";
 
 export default class App extends Component {
@@ -32,7 +31,6 @@ export default class App extends Component {
         <main className={css.Content}>
           <Routes>
             <Route path="/" element={<BurgerPage />} />
-            <Route path="/ship" element={<ShippingPage />} />
             <Route path="/orders" element={<OrderPage />} />
           </Routes>
         </main>
